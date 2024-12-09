@@ -25,4 +25,4 @@ function nuevoCliente(data){
     fs.writeFileSync('./db/clientes.txt',JSON.stringify(clientes))
 }
 
-module.exports = {nuevoTurno}
+module.exports = {nuevoCliente,nuevoTurno}

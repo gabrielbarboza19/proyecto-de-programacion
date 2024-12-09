@@ -4,8 +4,7 @@ const Modelo = require('./modelo.js')
 function nuevoTurno(data) {
     try {
         console.log("--Controlador--");
-        const libre = data.libre === 'Libre';
-        const unTurno = new Clases.Turno(data.dia, data.turno, libre);
+        const unTurno = new Clases.Turno(data.dia, data.turno, data.libre);
         console.log(unTurno);
         Modelo.nuevoTurno(unTurno);
     } catch (error) {

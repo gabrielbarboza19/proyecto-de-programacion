@@ -1,18 +1,3 @@
-// clases.js
-class Turno {
-    constructor(dia, hora, libre) {
-        this.dia = dia;
-        this.hora = hora;
-        this.libre = libre;
-    }
-}
-
-
-module.exports = { Turno };
-
-
-
-
 class Turno {
     constructor(dia, turno, libre) {
         this.dia = dia
@@ -25,8 +10,16 @@ class Turno {
     // }
 }
 
+class Cliente{
+    constructor(nombre,dni,telefono){
+        this.nombre = nombre
+        this.dni = dni
+        this.telefono = telefono
+    }
+}
+
 // const miTurno = new Turno("lunes",2,true)
 
 // miTurno.mostrarTurno();
 
-module.exports = {Turno};
+module.exports = {Turno,Cliente};
